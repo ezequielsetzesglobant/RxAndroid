@@ -3,7 +3,7 @@ package com.example.rxandroid.domain.entity
 data class MainEntity(
     val temp: Double,
     val feelsLike: Double,
-    val temMin: Double,
+    val tempMin: Double,
     val tempMax: Double,
     val pressure: Int,
     val seaLevel: Int,

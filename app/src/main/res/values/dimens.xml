@@ -4,4 +4,16 @@
     <dimen name="text_view_weather_activity_margin_top">40dp</dimen>
     <dimen name="button_weather_activity_text_size">20sp</dimen>
     <dimen name="button_weather_activity_margin_top">40dp</dimen>
+    <dimen name="recycler_view_weather_activity_margin_top">40dp</dimen>
+    <dimen name="recycler_view_weather_activity_margin_horizontal">20dp</dimen>
+    <dimen name="recycler_view_weather_activity_margin_bottom">20dp</dimen>
+
+    <dimen name="constraint_layout_item_recycler_view_margin_horizontal">5dp</dimen>
+    <dimen name="constraint_layout_item_recycler_view_margin_top">5dp</dimen>
+    <dimen name="text_view_item_recycler_view_size">15sp</dimen>
+    <dimen name="text_view_item_recycler_view_width">0dp</dimen>
+    <dimen name="text_view_item_recycler_view_margin_end">10dp</dimen>
+    <dimen name="image_view_item_recycler_view_width">60dp</dimen>
+    <dimen name="image_view_item_recycler_view_height">60dp</dimen>
+    <dimen name="image_view_item_recycler_view_margin_end">20dp</dimen>
 </resources>
