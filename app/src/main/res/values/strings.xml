@@ -2,6 +2,5 @@
     <string name="app_name">RxAndroid</string>
 
     <string name="text_view_weather_activity_title">Weather</string>
-    <string name="button_weather_activity_forecast">Get the forecast</string>
-    <string name="text_view_weather_activity_forecast_weather">No weather</string>
+    <string name="button_weather_activity_forecast">Get forecast for the next days</string>
 </resources>

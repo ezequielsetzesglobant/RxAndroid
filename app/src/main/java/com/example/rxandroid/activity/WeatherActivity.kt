@@ -2,6 +2,7 @@ package com.example.rxandroid.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.rxandroid.data.service.WeatherService
 import com.example.rxandroid.databinding.ActivityWeatherBinding
 import com.example.rxandroid.mvp.contract.WeatherContract
 import com.example.rxandroid.mvp.model.WeatherModel
@@ -18,6 +19,8 @@ class WeatherActivity : AppCompatActivity() {
         binding = ActivityWeatherBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        presenter = WeatherPresenter(WeatherModel(), WeatherView(this, binding))
+        presenter = WeatherPresenter(WeatherModel(WeatherService()), WeatherView(this, binding))
+
+        binding.buttonWeatherActivityIdForecast.setOnClickListener { presenter.getWeatherForecast() }
     }
 }
