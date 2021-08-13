@@ -14,5 +14,6 @@ interface WeatherContract {
     }
 
     interface WeatherViewContract {
+        fun showWeatherForecast(forecastApiEntity: ForecastApiEntity)
     }
 }

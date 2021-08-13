@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/constraint_layout_item_recycler_view_margin_horizontal"
+    android:layout_marginTop="@dimen/constraint_layout_item_recycler_view_margin_top">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_blue">
+
+        <TextView
+            android:id="@+id/text_view_item_recycler_view_day"
+            style="@style/TextViewItemRecyclerViewStyle"
+            android:layout_width="@dimen/text_view_item_recycler_view_width"
+            android:layout_height="wrap_content"
+            android:text="@string/text_item_recycler_view"
+            app:layout_constraintEnd_toStartOf="@id/image_view_item_recycler_view_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_view_item_recycler_view_minimum_temperature"
+            style="@style/TextViewItemRecyclerViewStyle"
+            android:layout_width="@dimen/text_view_item_recycler_view_width"
+            android:layout_height="wrap_content"
+            android:text="@string/text_item_recycler_view"
+            app:layout_constraintEnd_toStartOf="@id/image_view_item_recycler_view_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_view_item_recycler_view_day" />
+
+        <TextView
+            android:id="@+id/text_view_item_recycler_view_maximum_temperature"
+            style="@style/TextViewItemRecyclerViewStyle"
+            android:layout_width="@dimen/text_view_item_recycler_view_width"
+            android:layout_height="wrap_content"
+            android:text="@string/text_item_recycler_view"
+            app:layout_constraintEnd_toStartOf="@id/image_view_item_recycler_view_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_view_item_recycler_view_minimum_temperature" />
+
+        <TextView
+            android:id="@+id/text_view_item_recycler_view_clouds"
+            style="@style/TextViewItemRecyclerViewStyle"
+            android:layout_width="@dimen/text_view_item_recycler_view_width"
+            android:layout_height="wrap_content"
+            android:text="@string/text_item_recycler_view"
+            app:layout_constraintEnd_toStartOf="@id/image_view_item_recycler_view_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_view_item_recycler_view_maximum_temperature" />
+
+        <TextView
+            android:id="@+id/text_view_item_recycler_view_wind"
+            style="@style/TextViewItemRecyclerViewStyle"
+            android:layout_width="@dimen/text_view_item_recycler_view_width"
+            android:layout_height="wrap_content"
+            android:text="@string/text_item_recycler_view"
+            app:layout_constraintEnd_toStartOf="@id/image_view_item_recycler_view_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_view_item_recycler_view_clouds" />
+
+        <ImageView
+            android:id="@+id/image_view_item_recycler_view_icon"
+            style="@style/ImageViewItemRecyclerViewStyle"
+            android:layout_width="@dimen/image_view_item_recycler_view_width"
+            android:layout_height="@dimen/image_view_item_recycler_view_height"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

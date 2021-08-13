@@ -11,7 +11,8 @@ class WeatherPresenter(private val model: WeatherContract.WeatherModelContract, 
         model.getObservableWeatherForecast()
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
-            .subscribe {
+            .subscribe { forecastApiEntity ->
+                view.showWeatherForecast(forecastApiEntity)
             }
     }
 }
