@@ -16,4 +16,15 @@
     <dimen name="image_view_item_recycler_view_width">60dp</dimen>
     <dimen name="image_view_item_recycler_view_height">60dp</dimen>
     <dimen name="image_view_item_recycler_view_margin_end">20dp</dimen>
+
+    <dimen name="text_view_fragment_text_size">15sp</dimen>
+    <dimen name="text_view_fragment_margin_end">5dp</dimen>
+    <dimen name="text_view_fragment_padding_horizontal">10dp</dimen>
+    <dimen name="text_view_fragment_shadow_dx">3</dimen>
+    <dimen name="text_view_fragment_shadow_dy">3</dimen>
+    <dimen name="text_view_fragment_shadow_radius">2</dimen>
+
+    <dimen name="button_fragment_text_size">15sp</dimen>
+    <dimen name="button_fragment_margin_top">15dp</dimen>
+    <dimen name="button_fragment_margin_end">10dp</dimen>
 </resources>
