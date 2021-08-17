@@ -51,6 +51,7 @@ class ExtendedInformationFragment : DialogFragment() {
             arguments = Bundle().apply {
                 putSerializable(DAY_ENTITY_KEY, dayEntity as? Serializable)
             }
+            isCancelable = false
         }
     }
 }

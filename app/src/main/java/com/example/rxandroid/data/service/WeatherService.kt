@@ -6,11 +6,11 @@ import com.example.rxandroid.data.mapper.transform
 import com.example.rxandroid.domain.entity.ForecastApiEntity
 import io.reactivex.rxjava3.core.Observable
 
-class WeatherService {
+class WeatherService: Service {
 
     private val weatherRequestGenerator = WeatherRequestGenerator()
 
-    fun getObservableForecastApi(): Observable<ForecastApiEntity> = Observable.create { subscriber ->
+    override fun getObservableForecastApi(): Observable<ForecastApiEntity> = Observable.create { subscriber ->
         val response =
             weatherRequestGenerator.generateRequest(WeatherApi::class.java).getResponseWeather(CITY_NAME, BuildConfig.API_KEY, UNITS)
                 .execute()

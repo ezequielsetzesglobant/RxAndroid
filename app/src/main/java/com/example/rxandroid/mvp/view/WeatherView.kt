@@ -26,10 +26,7 @@ class WeatherView(activity: Activity, private val binding: ActivityWeatherBindin
 
     override fun showExtendedInformation(position: Int) {
         fragmentManager?.let {
-            ExtendedInformationFragment.newInstance(forecastApiEntityList[position]).apply {
-                show(it, TAG)
-                isCancelable = false
-            }
+            ExtendedInformationFragment.newInstance(forecastApiEntityList[position]).show(it, TAG)
         }
     }
 
