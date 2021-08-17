@@ -1,5 +1,7 @@
 package com.example.rxandroid.domain.entity
 
+import java.io.Serializable
+
 data class DayEntity(
     val dt: Int,
     val main: MainEntity,
@@ -11,4 +13,4 @@ data class DayEntity(
     val rain: RainEntity,
     val sys: SysEntity,
     val dtTxt: String
-)
+) : Serializable

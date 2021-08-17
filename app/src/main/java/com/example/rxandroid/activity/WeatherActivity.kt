@@ -2,6 +2,7 @@ package com.example.rxandroid.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.rxandroid.adapter.WeatherAdapter
 import com.example.rxandroid.data.service.WeatherService
 import com.example.rxandroid.databinding.ActivityWeatherBinding
 import com.example.rxandroid.mvp.contract.WeatherContract
@@ -9,7 +10,7 @@ import com.example.rxandroid.mvp.model.WeatherModel
 import com.example.rxandroid.mvp.presenter.WeatherPresenter
 import com.example.rxandroid.mvp.view.WeatherView
 
-class WeatherActivity : AppCompatActivity() {
+class WeatherActivity : AppCompatActivity(), WeatherAdapter.OnWeatherListener {
 
     private lateinit var binding: ActivityWeatherBinding
     private lateinit var presenter: WeatherContract.WeatherPresenterContract
@@ -21,6 +22,10 @@ class WeatherActivity : AppCompatActivity() {
 
         presenter = WeatherPresenter(WeatherModel(WeatherService()), WeatherView(this, binding))
 
-        binding.buttonWeatherActivityIdForecast.setOnClickListener { presenter.getWeatherForecast() }
+        binding.buttonWeatherActivityIdForecast.setOnClickListener { presenter.getWeatherForecast(this) }
+    }
+
+    override fun onWeatherClick(position: Int) {
+        presenter.onRecyclerItemClicked(position)
     }
 }

@@ -8,7 +8,14 @@
     <string name="text_view_day_message_item_recycler_view">Day: %1$s</string>
     <string name="text_view_minimum_temperature_message_item_recycler_view">Minimum temperature: %1$s°C</string>
     <string name="text_view_maximum_temperature_message_item_recycler_view">Maximum temperature: %1$s°C</string>
-    <string name="text_view_clouds_message_item_recycler_view">Probability of clouds: %1$s %%</string>
-    <string name="text_view_wind_message_item_recycler_view">Speed of the wind: %1$s km/h</string>
+    <string name="text_view_clouds_message_item_recycler_view">Probability of clouds: %1$s%%</string>
+    <string name="text_view_wind_message_item_recycler_view">Speed of the wind: %1$skm/h</string>
     <string name="image_view_icon_message_item_recycler_view">http://openweathermap.org/img/wn/%1$s@2x.png</string>
+
+    <string name="text_view_fragment_text">Weather extended information of the day</string>
+    <string name="text_view_weather_main_message_fragment">Weather main: %1$s</string>
+    <string name="text_view_humidity_message_fragment">Humidity: %1$s%%</string>
+    <string name="text_view_visibility_message_fragment">Visibility: %1$s meters</string>
+    <string name="text_view_weather_description_message_fragment">Weather description: %1$s</string>
+    <string name="button_fragment_close">Close</string>
 </resources>
